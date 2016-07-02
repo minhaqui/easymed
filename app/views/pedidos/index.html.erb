@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pedidos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome medicamento</th>
+      <th>Qtd medicamento</th>
+      <th>Pagamento</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pedidos.each do |pedido| %>
+      <tr>
+        <td><%= pedido.nome_medicamento %></td>
+        <td><%= pedido.qtd_medicamento %></td>
+        <td><%= pedido.pagamento %></td>
+        <td><%= pedido.status %></td>
+        <td><%= link_to 'Show', pedido %></td>
+        <td><%= link_to 'Edit', edit_pedido_path(pedido) %></td>
+        <td><%= link_to 'Destroy', pedido, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pedido', new_pedido_path %>
