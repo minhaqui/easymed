@@ -1,4 +1,69 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <strong>Nome:</strong>
+  <%= @cliente.nome %>
+</p>
+
+<p>
+  <strong>Telefone:</strong>
+  <%= @cliente.telefone %>
+</p>
+
+<p>
+  <strong>Celular:</strong>
+  <%= @cliente.celular %>
+</p>
+
+<p>
+  <strong>Rua:</strong>
+  <%= @cliente.rua %>
+</p>
+
+<p>
+  <strong>Num:</strong>
+  <%= @cliente.num %>
+</p>
+
+<p>
+  <strong>Complemento:</strong>
+  <%= @cliente.complemento %>
+</p>
+
+<p>
+  <strong>Referencia:</strong>
+  <%= @cliente.referencia %>
+</p>
+
+<p>
+  <strong>Bairro:</strong>
+  <%= @cliente.bairro %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @cliente.cidade %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @cliente.estado %>
+</p>
+
+<p>
+  <strong>Lista itens:</strong>
+  <%= @cliente.lista_itens %>
+</p>
+
+<p>
+  <strong>Qtd itens:</strong>
+  <%= @cliente.qtd_itens %>
+</p>
+
+<p>
+  <strong>Pagamento:</strong>
+  <%= @cliente.pagamento %>
+</p>
+
 <%= link_to 'Edit', edit_cliente_path(@cliente) %> |
 <%= link_to 'Back', clientes_path %>

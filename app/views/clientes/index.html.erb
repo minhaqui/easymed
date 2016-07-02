@@ -5,6 +5,19 @@
 <table>
   <thead>
     <tr>
+      <th>Nome</th>
+      <th>Telefone</th>
+      <th>Celular</th>
+      <th>Rua</th>
+      <th>Num</th>
+      <th>Complemento</th>
+      <th>Referencia</th>
+      <th>Bairro</th>
+      <th>Cidade</th>
+      <th>Estado</th>
+      <th>Lista itens</th>
+      <th>Qtd itens</th>
+      <th>Pagamento</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -12,6 +25,19 @@
   <tbody>
     <% @clientes.each do |cliente| %>
       <tr>
+        <td><%= cliente.nome %></td>
+        <td><%= cliente.telefone %></td>
+        <td><%= cliente.celular %></td>
+        <td><%= cliente.rua %></td>
+        <td><%= cliente.num %></td>
+        <td><%= cliente.complemento %></td>
+        <td><%= cliente.referencia %></td>
+        <td><%= cliente.bairro %></td>
+        <td><%= cliente.cidade %></td>
+        <td><%= cliente.estado %></td>
+        <td><%= cliente.lista_itens %></td>
+        <td><%= cliente.qtd_itens %></td>
+        <td><%= cliente.pagamento %></td>
         <td><%= link_to 'Show', cliente %></td>
         <td><%= link_to 'Edit', edit_cliente_path(cliente) %></td>
         <td><%= link_to 'Destroy', cliente, method: :delete, data: { confirm: 'Are you sure?' } %></td>

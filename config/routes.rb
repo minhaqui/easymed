@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :pedidos
+  resources :clientes
+  resources :clientes
   resources :clientes
   get 'welcome/index'
   root 'welcome#index'
