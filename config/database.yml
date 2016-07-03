@@ -8,3 +8,8 @@ default: &default
 development:
   adapter: sqlite3
   database: easymeddatabase
+
+production:
+  <<: *default
+  adapter: postgresql
+  database: easymeddatabase
